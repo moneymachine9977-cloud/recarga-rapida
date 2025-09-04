@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recarga Rápida</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f8fafc; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; flex-direction: column; }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      max-width: 380px;
+      width: 100%;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(2,12,27,.12);
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 22px;
+      color: #0B5CAB;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .consultar-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #0B5CAB, #0a4e96);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .consultar-btn:hover {
+      background: linear-gradient(135deg, #0a4e96, #083b74);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(11,92,171,.25);
+    }
+
+    .seguro {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #3a3a3a;
+    }
+
+    .seguro img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 12px;
+      color: #777;
+      max-width: 360px;
+    }
+
+    .footer a {
+      color: #0B5CAB;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Recarga Rápida</h1>
+    <p>Recarga Rápida LTDA</p>
+    <p>Recarregue seu celular em segundos. Clique abaixo para começar:</p>
+    <button class="consultar-btn" onclick="abrirRecarga()">Recarregar agora</button>
+
+    <div class="seguro">
+      <img src="190411.png" alt="escudo segurança">
+      <span>Ambiente seguro</span>
+    </div>
+
+    <div class="footer">
+      <p>
+        Ao continuar, você concorda com os nossos <a href="/termos/" target="_blank">Termos de Uso</a> e 
+        <a href="/politicas/" target="_blank">Política de Privacidade</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>CNPJ: 51.990.915/0001-22 | WhatsApp: (11) 980098-00</p>
+  </div>
+
+  <script>
+    function abrirRecarga() {
+      window.location.href = "/recarga/";
+    }
+  </script>
+
+
+
+</body></html>
